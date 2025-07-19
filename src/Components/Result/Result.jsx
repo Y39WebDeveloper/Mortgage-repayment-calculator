@@ -1,5 +1,5 @@
 import "./Result.css";
-
+import EmptyIllustration from "../../assets/images/illustration-empty.svg"
 function Result({ result, total, isEmpty }) {
   return (
     <div className="result">
@@ -41,7 +41,7 @@ function ResultEmpty() {
   return (
     <div className="result-empty">
       <div className="img">
-        <img src="/assets/images/illustration-empty.svg" alt="" />
+        <img src={EmptyIllustration} alt="" />
       </div>
       <h2 className="txt-2 txt-white">Results shown here</h2>
       <h4 className="txt-4 txt-slate-300">

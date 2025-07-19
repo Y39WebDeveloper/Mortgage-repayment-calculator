@@ -1,4 +1,5 @@
 import { InputField, RadioInput } from "../";
+import CalcSvg from '../../assets/images/icon-calculator.svg'
 import "./Calculator.css";
 
 function Calculator({ mortage, setMortage }) {
@@ -102,7 +103,7 @@ function Calculator({ mortage, setMortage }) {
       </div>
       <button className="calc-btn txt-3 txt-slate-900" onClick={handleSubmit} type="submit">
         <div className="icon">
-          <img src="/assets/images/icon-calculator.svg" alt="calc" />
+          <img src={CalcSvg} alt="calc" />
         </div>
         Calculate Repayments
       </button>
