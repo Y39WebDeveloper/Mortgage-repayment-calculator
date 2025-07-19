@@ -1,0 +1,137 @@
+:root {
+  --color-lime: #D8DB2F;
+  --color-red: #D73328;
+  --color-slate-900: #133041;
+  --color-slate-700: #4E6E7E;
+  --color-slate-500: #6B94A8;
+  --color-slate-300: #9ABED5;
+  --color-slate-100: #E4F4FD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url("/assets/fonts/static/PlusJakartaSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Jakarta Sans";
+  src: url("/assets/fonts/static/PlusJakartaSans-Bold.ttf");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-slate-300);
+  color: var(--color-slate-900);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.txt-1 {
+  font-size: 40px;
+  line-height: 125%;
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  .txt-1 {
+    font-size: 56px;
+  }
+
+}
+
+.txt-2 {
+  font-size: 24px;
+  line-height: 125%;
+  font-weight: 700;
+}
+
+.txt-3 {
+  font-size: 18px;
+  line-height: 125%;
+  font-weight: 700;
+}
+
+.txt-4 {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.txt-5 {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.txt-slate-900 {
+  color: var(--color-slate-900);
+}
+
+.txt-slate-700 {
+  color: var(--color-slate-700);
+}
+
+.txt-slate-300 {
+  color: var(--color-slate-300);
+}
+
+.txt-white {
+  color: #FFFFFF;
+}
+
+.txt-lime {
+  color: var(--color-lime);
+}
+.txt-red {
+  color: var(--color-red);
+}
+
+.app {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 40px;
+  }
+  .app{
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: unset;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+  .app{
+    flex-direction: row;
+    max-width: 1008px;
+  }
+}

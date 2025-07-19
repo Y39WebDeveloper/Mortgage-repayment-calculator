@@ -1,0 +1,62 @@
+.input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    flex: 1;
+}
+.input-field.full-width{
+    flex-basis: 100%;
+}
+.input-field .input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--color-slate-500);
+    background-color: #fff;
+    border-radius: 4px;
+    transition: .3s;
+    overflow: hidden;
+}
+.input-field .input input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+}
+.input-field .input:hover{
+    border-color: var(--color-slate-900);
+}
+.input-field .input span{
+    background-color: var(--color-slate-100);
+    transition: .3s;
+}
+.input-field .input:has(input:focus) span{
+    background-color: var(--color-lime);
+    color: var(--color-slate-900);
+}
+.input-field .input input,
+.input-field .input span{
+    padding: 12.5px 16px;
+}
+
+
+.input-field .input.required {
+    border-color: var(--color-red);
+}
+.input-field .input.required span{
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

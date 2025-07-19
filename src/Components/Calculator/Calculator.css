@@ -1,0 +1,82 @@
+.calculator{
+    background-color: #fff;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.calculator .header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.clear-btn{
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s;
+}
+.clear-btn:focus,
+.clear-btn:hover{
+    color: var(--color-slate-900);
+}
+
+.calculator .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+}
+.radio-field{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    flex-basis: 100%;
+}
+.radio-field .radios{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+.calc-btn{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--color-lime);
+    border-radius: 40px;
+    padding: 16px 40px;
+    transition: .3s;
+}
+.calc-btn .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-btn:hover,
+.calc-btn:focus{
+    background-color: #ebed97;
+}
+@media (min-width: 768px) {
+    .calculator .inputs{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .calc-btn{
+        width: fit-content;
+    }
+}
